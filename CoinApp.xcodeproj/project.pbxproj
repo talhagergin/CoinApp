@@ -18,6 +18,8 @@
 		0A55181B2B87670300ECEA57 /* CoinRowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55181A2B87670300ECEA57 /* CoinRowView.swift */; };
 		0A55181D2B876E7700ECEA57 /* HomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55181C2B876E7700ECEA57 /* HomeViewModel.swift */; };
 		0A55181F2B87729700ECEA57 /* Coin.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A55181E2B87729700ECEA57 /* Coin.swift */; };
+		0A5518222B8787E100ECEA57 /* Kingfisher in Frameworks */ = {isa = PBXBuildFile; productRef = 0A5518212B8787E100ECEA57 /* Kingfisher */; };
+		0A5518242B87890E00ECEA57 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A5518232B87890E00ECEA57 /* Double.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -33,6 +35,7 @@
 		0A55181A2B87670300ECEA57 /* CoinRowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinRowView.swift; sourceTree = "<group>"; };
 		0A55181C2B876E7700ECEA57 /* HomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeViewModel.swift; sourceTree = "<group>"; };
 		0A55181E2B87729700ECEA57 /* Coin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Coin.swift; sourceTree = "<group>"; };
+		0A5518232B87890E00ECEA57 /* Double.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -40,6 +43,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A5518222B8787E100ECEA57 /* Kingfisher in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -104,6 +108,7 @@
 		0A55180C2B87381600ECEA57 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				0A5518232B87890E00ECEA57 /* Double.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -168,6 +173,9 @@
 			dependencies = (
 			);
 			name = CoinApp;
+			packageProductDependencies = (
+				0A5518212B8787E100ECEA57 /* Kingfisher */,
+			);
 			productName = CoinApp;
 			productReference = 0A5517F92B87380200ECEA57 /* CoinApp.app */;
 			productType = "com.apple.product-type.application";
@@ -196,6 +204,9 @@
 				Base,
 			);
 			mainGroup = 0A5517F02B87380200ECEA57;
+			packageReferences = (
+				0A5518202B8787E000ECEA57 /* XCRemoteSwiftPackageReference "Kingfisher" */,
+			);
 			productRefGroup = 0A5517FA2B87380200ECEA57 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -230,6 +241,7 @@
 				0A5518172B873A4200ECEA57 /* TopMoversItemView.swift in Sources */,
 				0A5517FF2B87380200ECEA57 /* ContentView.swift in Sources */,
 				0A55181B2B87670300ECEA57 /* CoinRowView.swift in Sources */,
+				0A5518242B87890E00ECEA57 /* Double.swift in Sources */,
 				0A5517FD2B87380200ECEA57 /* CoinAppApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -364,6 +376,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoinApp/Preview Content\"";
+				DEVELOPMENT_TEAM = YP367N62QD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -392,6 +405,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"CoinApp/Preview Content\"";
+				DEVELOPMENT_TEAM = YP367N62QD;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
@@ -434,6 +448,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		0A5518202B8787E000ECEA57 /* XCRemoteSwiftPackageReference "Kingfisher" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/onevcat/Kingfisher.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 7.11.0;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		0A5518212B8787E100ECEA57 /* Kingfisher */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 0A5518202B8787E000ECEA57 /* XCRemoteSwiftPackageReference "Kingfisher" */;
+			productName = Kingfisher;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 0A5517F12B87380200ECEA57 /* Project object */;
 }
